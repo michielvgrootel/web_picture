@@ -19,7 +19,7 @@ permissions:
   # EDIT THIS before you add the plugin: the host of every picture address you want to show, at most 8, lowercase,
   # public host names only (no IP address, no localhost, no *.local / *.lan / *.home). Tessera fetches a picture only
   # from a host named here; any other address shows "No picture".
-  network: [commons.wikimedia.org]
+  network: [upload.wikimedia.org]
 attributes: [cloud]
 privacy: https://github.com/your-github-name/tessera-web-picture#privacy
 
