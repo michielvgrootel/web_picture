@@ -3,14 +3,14 @@
 tiles:
   - tile: picture
     name: Webcam
-    options: { url: "https://upload.wikimedia.org/sample.jpg", refresh: "5" }
+    options: { url: "https://commons.wikimedia.org/wiki/Commons:Explore/Pictures#/media/File:Ganoderma_sp_1410.jpg", refresh: "5" }
   - tile: picture
     name: Whole picture
-    options: { url: "https://upload.wikimedia.org/sample.jpg", fit: contain }
+    options: { url: "https://commons.wikimedia.org/wiki/Commons:Explore/Pictures#/media/File:Ganoderma_sp_1410.jpg", fit: contain }
     sizes: [2x2]
   - tile: picture
     name: Empty
     options: {}
 
 pictures:
-  "https://upload.wikimedia.org/sample.jpg": preview/sample.jpg
+  "https://commons.wikimedia.org/wiki/Commons:Explore/Pictures#/media/File:Ganoderma_sp_1410.jpg": preview/sample.jpg
