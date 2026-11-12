@@ -1,0 +1,43 @@
+# Web picture: a tile that shows the picture at an http(s) address, fetched again every few minutes when you want, so a
+# webcam snapshot, a weather map or a chart that a site renders as an image stays current on the screen.
+# Every field is explained in docs/MANIFEST.md.
+id: web_picture
+version: 0.1.0
+# 0.17 for on_picture (the plugin hears whether its picture came).
+api: "0.17"
+icon: image
+maintainer: michiel
+license: MIT
+stage: beta
+topics: [photos]
+requires:
+  esphome: 2026.6.2
+boards: any
+flash_kb: 6
+
+permissions:
+  # EDIT THIS before you add the plugin: the host of every picture address you want to show, at most 8, lowercase,
+  # public host names only (no IP address, no localhost, no *.local / *.lan / *.home). Tessera fetches a picture only
+  # from a host named here; any other address shows "No picture".
+  network: [upload.wikimedia.org]
+attributes: [cloud]
+privacy: https://github.com/your-github-name/tessera-web-picture#privacy
+
+tiles:
+  - id: picture
+    name: tile_name
+    icon: image
+    sizes: { min: 1x1, max: 4x4 }
+    memory: 500
+    # One place for one picture (plugin API 0.10).
+    pictures: 1
+    example: tile_example
+    options:
+      - { id: url, kind: text, label: url, hint: url_hint }
+      - { id: url_more, kind: text, label: url_more, hint: url_more_hint }
+      - { id: refresh, kind: choice, label: refresh, hint: refresh_hint, default: "0",
+          choices: [{ value: "0", label: refresh_off }, { value: "1", label: refresh_1 }, { value: "5", label: refresh_5 },
+                    { value: "15", label: refresh_15 }, { value: "60", label: refresh_60 }] }
+      - { id: fit, kind: choice, label: fit, hint: fit_hint, default: cover,
+          choices: [{ value: cover, label: fit_cover }, { value: contain, label: fit_contain }] }
+      - { id: caption, kind: toggle, label: caption, hint: caption_hint, default: true }

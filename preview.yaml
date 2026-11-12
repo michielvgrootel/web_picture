@@ -1,0 +1,16 @@
+# What tools/preview.py shows (docs/PREVIEW.md): a picture at an address, cover and contain. The picture comes from the
+# file below, never from the internet.
+tiles:
+  - tile: picture
+    name: Webcam
+    options: { url: "https://upload.wikimedia.org/sample.jpg", refresh: "5" }
+  - tile: picture
+    name: Whole picture
+    options: { url: "https://upload.wikimedia.org/sample.jpg", fit: contain }
+    sizes: [2x2]
+  - tile: picture
+    name: Empty
+    options: {}
+
+pictures:
+  "https://upload.wikimedia.org/sample.jpg": preview/sample.jpg

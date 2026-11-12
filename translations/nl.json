@@ -1,0 +1,31 @@
+{
+  "_meta": { "name": "Nederlands" },
+  "screen": {
+    "no_picture": "Geen afbeelding",
+    "no_address": "Geen adres",
+    "no_pictures": "Geen afbeeldingen hier"
+  },
+  "app": {
+    "name": "Webafbeelding",
+    "summary": "Een tegel met de afbeelding op een http(s)-adres, desgewenst om de paar minuten ververst.",
+    "tile_name": "Webafbeelding",
+    "tile_example": "Een webcambeeld",
+    "url": "Adres",
+    "url_hint": "Het adres van de afbeelding, beginnend met https:// of http://. De host moet in de plugin staan.",
+    "url_more": "Adres, vervolg",
+    "url_more_hint": "Voor een adres langer dan 64 tekens: de rest ervan, direct achter het eerste deel.",
+    "refresh": "Verversen",
+    "refresh_hint": "Haal de afbeelding in dit ritme opnieuw op, voor een afbeelding die op hetzelfde adres verandert.",
+    "refresh_off": "Nooit",
+    "refresh_1": "Elke minuut",
+    "refresh_5": "Elke 5 minuten",
+    "refresh_15": "Elk kwartier",
+    "refresh_60": "Elk uur",
+    "fit": "Passen",
+    "fit_hint": "Vullen vult de tegel en snijdt af wat over is; passend toont de hele afbeelding.",
+    "fit_cover": "Vullen",
+    "fit_contain": "Passend",
+    "caption": "Naam over de afbeelding",
+    "caption_hint": "De naam van de tegel in de hoek van de afbeelding."
+  }
+}

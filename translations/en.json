@@ -1,0 +1,31 @@
+{
+  "_meta": { "name": "English" },
+  "screen": {
+    "no_picture": "No picture",
+    "no_address": "No address",
+    "no_pictures": "No pictures here"
+  },
+  "app": {
+    "name": "Web picture",
+    "summary": "A tile that shows the picture at an http(s) address, refreshed every few minutes if you like.",
+    "tile_name": "Web picture",
+    "tile_example": "A webcam snapshot",
+    "url": "Address",
+    "url_hint": "The picture's address, starting with https:// or http://. Its host must be one the plugin names.",
+    "url_more": "Address, continued",
+    "url_more_hint": "For an address over 64 characters: the rest of it, put right after the first part.",
+    "refresh": "Refresh",
+    "refresh_hint": "Fetch the picture again on this rhythm, for a picture that changes at the same address.",
+    "refresh_off": "Never",
+    "refresh_1": "Every minute",
+    "refresh_5": "Every 5 minutes",
+    "refresh_15": "Every 15 minutes",
+    "refresh_60": "Every hour",
+    "fit": "Fit",
+    "fit_hint": "Cover fills the tile and cuts away what is over; contain shows the whole picture.",
+    "fit_cover": "Cover",
+    "fit_contain": "Contain",
+    "caption": "Name over the picture",
+    "caption_hint": "The tile's name in the corner of the picture."
+  }
+}
